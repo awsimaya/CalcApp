@@ -127,14 +127,14 @@ class ViewController: UIViewController {
     }
     
     func validInput() -> Bool {
-        var count = 0
+        var position = 0
         var funcCharIndexes = [Int]()
         
         for char in workings{
             if(specialCharacter(char: char)){
-                funcCharIndexes.append(count)
+                funcCharIndexes.append(position)
             }
-            count += 1
+            position += 1
         }
         
         var previous: Int = -1
